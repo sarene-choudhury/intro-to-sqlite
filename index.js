@@ -49,12 +49,16 @@ app.get("/user/:id", db.getUserById);
 // Write endpoints that allow a client to:
 
 // Get all users
+app.get("/getAllUsers", db.getAllUsers);
 
 // Create a new user
+app.get("/newUser/", db.newUser);
 
 // Update a user's name, given an id
+app.get("/updateNameFromID/:id", db.updateNameFromID);
 
 // Delete a user by id
+app.get("/deleteUserByID/:id", db.deleteUserByID);
 
 //#endregion Database Routes
 
